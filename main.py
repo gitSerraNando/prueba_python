@@ -1,6 +1,11 @@
 # FastAPI
 from fastapi import FastAPI
 import uvicorn 
+from app.db.database import Base,engine
+
+def create_database():
+    Base.metadata.create_all(bind=engine)
+create_database()
 
 # Routes
 from app.routers import user
