@@ -1,6 +1,6 @@
 # FastAPI
 from fastapi import FastAPI
-# import uvicorn 
+import uvicorn 
 from app.db.database import Base,engine
 
 # Routes
@@ -20,4 +20,4 @@ app.include_router(vacant.router)
 
 
 # if __name__=="__main__":
-#     uvicorn.run("main:app",port=8000,reload=True)
+#     uvicorn.run("main:app",port=8080,reload=True)
