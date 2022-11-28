@@ -14,3 +14,6 @@
  y podemos acceder a la url de la documentacion
 
  http://127.0.0.1:8000/docs#/ 
+
+ # Heroku url
+ https://testpython.herokuapp.com/docs#/
