@@ -1,9 +1,3 @@
-
-# Python
-from uuid import UUID
-from datetime import datetime
-from typing import Optional
-
 # Pydantic
 from pydantic import BaseModel
 from pydantic import EmailStr

@@ -31,7 +31,6 @@ def show_all_users(db: Session = Depends(get_db)):
         - last_name: str
         - years_previous_experience: int
         - skills: list
-        - password: str
     """
     data = user.get_users(db)
     return data
@@ -63,7 +62,6 @@ def get_user(
         - last_name: str
         - years_previous_experience: int
         - skills: list
-        - password: str
     """
     user_data = user.get_user(user_id, db)
     return user_data
@@ -91,7 +89,6 @@ def user_create(user_body: UserCreate = Body(...), db: Session = Depends(get_db)
         - last_name: str
         - years_previous_experience: int
         - skills: list
-        - password: str
 
     """
     db_user = user.get_user_by_email(db, email=user_body.email)
