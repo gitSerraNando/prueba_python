@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "prueba-sr-backend-developer-hunty"
+version = "0.1.0"
+description = ""
+authors = ["Hernando Escobar <hernandoescobar23@gmail.com>"]
+readme = "README.md"
+packages = [{include = "prueba_sr_backend_developer_hunty"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.88.0"
+uvicorn = "^0.20.0"
+pydantic = {extras = ["email"], version = "^1.10.2"}
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
